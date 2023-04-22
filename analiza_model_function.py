@@ -26,7 +26,7 @@ def analiza_model(model, x, y, x_, y_, x_app, nume_model, z,
         acuratete, ["Acuratete globala", "Acuratete medie", "Index Cohen"])
     t_acuratete.name = "Acuratete " + nume_model
     t_acuratete.to_csv("output/acuratete_" + nume_model + ".csv")
-    if nume_model == "Bayes":
+    if nume_model == "naive_bayes":
         plot_distributii(z, predictie, clase, nume_model)
     plot_cm(y_, predictie, nume_model)
     plot_metrici(y_, proba, nume_model)

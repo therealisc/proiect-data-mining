@@ -105,8 +105,8 @@ def classification_processing():
     afisare_rezultate(rezultate_svm, "svm")
 
     # predictions
-    tabel_predictii_testare.to_csv("predictii_test.csv")
-    tabel_predictii.to_csv("predictii.csv")
+    tabel_predictii_testare.to_csv("output/predictii_test.csv")
+    tabel_predictii.to_csv("output/predictii.csv")
 
 
 if __name__ == "__main__":
